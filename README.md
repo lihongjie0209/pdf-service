@@ -10,8 +10,11 @@
 
 
 ## 性能
-1. 使用静态HTML生成PDF/截图耗时 < 200ms
-2. 使用URL生成PDF/截图耗时取决于页面加载速度， 以百度为例耗时 <= 1500 ms
+
+HTML生成截图 30并发下45QPS
+
+![html-screenshot-perf-test.jpg](images/html-screenshot-perf-test.jpg)![./images/]
+
 
 ## 核心功能
 

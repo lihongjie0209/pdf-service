@@ -9,8 +9,8 @@ Content-Type: application/json
   "html": "<!DOCTYPE html><html lang=\"en\"><head>    <meta charset=\"UTF-8\">    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">    <title>Playwright Screenshot Test<\/title>    <style>        body {            font-family: Arial, sans-serif;            background-color: #f4f4f9;            margin: 0;            padding: 20px;            text-align: center;        }        h1 {            color: #333;        }        p {            color: #555;        }        button {            background-color: #007bff;            color: white;            border: none;            padding: 10px 20px;            font-size: 16px;            cursor: pointer;            border-radius: 5px;        }        button:hover {            background-color: #0056b3;        }    <\/style><\/head><body>    <h1>Welcome to Playwright Screenshot Test<\/h1>    <p>This is a simple static HTML page designed to test Playwright's screenshot functionality.<\/p>    <button onclick=\"alert('Button clicked!')\">Click Me<\/button><\/body><\/html>",
   "timeout": 10000,
   "browserType": "chrome",
-  "screenWidth": 1920,
-  "screenHeight": 1080
+  "screenWidth": 450,
+  "screenHeight": 220
 }
 
 <> 2025-05-18T174353.200.json

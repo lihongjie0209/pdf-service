@@ -62,17 +62,7 @@ public class BrowserPooledObjectFactory implements PooledObjectFactory<Browser> 
     public void passivateObject(PooledObject<Browser> p) throws Exception {
 
         log.debug("passivateObject: {}", p.getObject().toString());
-        Browser object = p.getObject();
-        object.contexts().forEach(context -> {
 
-            try {
-
-                context.close();
-                log.debug("passivateObject: close context {}", context.toString());
-            } catch (Exception e) {
-                log.debug("close context error: {}", e.getMessage());
-            }
-        });
 
 
     }
