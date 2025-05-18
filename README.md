@@ -13,7 +13,7 @@
 
 HTML生成截图 30并发下45QPS
 
-![html-screenshot-perf-test.jpg](images/html-screenshot-perf-test.jpg)![./images/]
+![html-screenshot-perf-test.jpg](images/html-screenshot-perf-test.jpg)
 
 
 ## 核心功能
