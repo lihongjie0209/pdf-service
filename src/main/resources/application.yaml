@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: pdf-service
+
+
+
+playwrite:
+  pool:
+    chrome:
+      enabled: true
+      max-idle: 5
+      max-total: 5
+      min-evictable-idle-duration: PT1M
+      soft-min-evictable-idle-duration:  PT1M
+      max-wait-millis: 1000
+      jmx-enabled: false
+      fairness: false
+    firefox:
+      max-idle: 0
+      max-total: 5
+      min-evictable-idle-duration: PT1M
+      soft-min-evictable-idle-duration:  PT1M
+      max-wait-millis: 1000
+      jmx-enabled: false
+server:
+  port: 18787
