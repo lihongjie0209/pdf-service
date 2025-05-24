@@ -23,4 +23,4 @@ playwrite:
       max-wait-millis: 1000
       jmx-enabled: false
 server:
-  port: 18787
+  port: ${SERVER_PORT:18787}
