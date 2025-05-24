@@ -28,7 +28,7 @@ HTML生成截图 30并发下45QPS
 
 ## 技术栈
 
-- **后端框架**：Java 17
+- **后端框架**：Java 21
 - **浏览器自动化**：Playwright
 - **对象池管理**：Apache Commons Pool2
 - **日志管理**：SLF4J + Logback
