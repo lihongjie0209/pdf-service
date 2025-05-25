@@ -21,6 +21,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Extract git commit hash
         id: vars
         run: echo "GIT_HASH=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
@@ -34,3 +41,6 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/pdf-service:${{ env.GIT_HASH }}
             ${{ secrets.DOCKERHUB_USERNAME }}/pdf-service:latest
+            ghcr.io/${{ github.repository }}:${{ env.GIT_HASH }}
+            ghcr.io/${{ github.repository }}:latest
+
